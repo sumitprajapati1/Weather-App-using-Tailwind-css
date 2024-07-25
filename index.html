@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Example of linking Tailwind CSS in your HTML file -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"rel="stylesheet">
+
+</head>
+<body  class="bg-cover bg-center grid place-content-center h-screen" style="background-image: url('weatherImage.jpg')"  >
+    <div class="bg-blue-100 h-[700px] w-[300px] rounded-lg border-4
+      border-[#424874] md:h-[520px] md:w-[500px]">
+        
+        <h1 class="font-semibold text-3xl text-[#424874]
+         text-center p-3 "> Weather App using Tailwind Css</h1>
+        
+        <form id="weather">
+
+            <div for="city" class="p-5 text-2xl font-serif text-[#424874]">
+                Enter City: 
+            </div> 
+
+           <div class="flex items-center">
+            <input id="city" name="city" class="mx-2 py-4 bg-[#d9f2ff] w-[150px] h-[40px] rounded-lg 
+            text-center  border-4 border-sky-700  md:w-[280px] md:h-[60px]" type="text"
+             placeholder="Enter City Name"> 
+
+             <button class="my-0 p-2 bg-blue-400 w-[120px] h-[40px] rounded-lg 
+             text-center  border-4 border-sky-700  md:w-[180px] md:h-[60px] hover:bg-blue-600 hover:text-white " > Get Weather </button>
+           </div>
+
+        </form>
+        <div id="weather-info" 
+             class="grid grid-cols-2 gap-4">
+        </div>
+    </div>
+    <script src="app.js"> </script>
+
+</body>
+</html>
